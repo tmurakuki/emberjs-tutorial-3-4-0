@@ -1,4 +1,10 @@
-@import url(https://fonts.googleapis.com/css?family=Lato:300,300italic,400,700,700italic);
+@import url(
+  https://fonts.googleapis.com/css?family=Lato:300,
+  300italic,
+  400,
+  700,
+  700italic
+);
 /**
  * Base Elements
  */
@@ -19,7 +25,8 @@ p,
 div,
 span,
 a {
-  font-family: 'Lato', 'Open Sans', 'Helvetica Neue', 'Segoe UI', Helvetica, Arial, sans-serif;
+  font-family: "Lato", "Open Sans", "Helvetica Neue", "Segoe UI", Helvetica,
+    Arial, sans-serif;
   line-height: 1.5;
 }
 
@@ -73,7 +80,7 @@ p {
 .menu {
   height: 4em;
   background-color: #677ae4;
-  background-color: #05526A;
+  background-color: #05526a;
   background-color: #e46855;
 }
 
@@ -211,7 +218,6 @@ p {
   margin-top: 15px;
   background-color: #f6f6f6;
   padding: 15px 50px;
-  min-height: 200px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -250,7 +256,7 @@ p {
   cursor: pointer;
   margin: auto;
   flex: 25%;
-  flex-grow:1;
+  flex-grow: 1;
 }
 
 .listing small {
@@ -270,13 +276,15 @@ p {
 }
 
 .listing .map-container {
-  flex-grow:1;
+  flex-grow: 1;
   flex: 25%;
 }
 
 .listing .map {
-  height: 180px;
-  width: 200px;
+  height: 120px;
+  width: 140px;
+  margin-left: auto;
+  margin-right: 0;
 }
 
 .listing .details {
@@ -345,6 +353,17 @@ p {
   align-items: center;
 }
 
+.listing .location-detail-wrapper {
+  flex: 50%;
+  display: flex;
+  align-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.listing .location-map-wrapper {
+  flex: 25%;
+}
+
 /**
  * Utilities
  */
@@ -370,20 +389,23 @@ p {
 }
 
 .tomster {
-    background: url(../assets/images/teaching.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    height: 200px;
-    width: 200px;
+  background: url(../assets/images/teaching.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 200px;
+  width: 200px;
 
-    position: relative;
-    top: -50px;
+  position: relative;
+  top: -50px;
 }
 
-.screen-reader{
+.screen-reader {
   position: absolute;
   overflow: hidden;
   clip: rect(0 0 0 0);
-  height: 1px; width: 1px;
-  margin: -1px; padding: 0; border: 0;
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
 }
